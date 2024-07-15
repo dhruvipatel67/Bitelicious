@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodcart Page</title>
+    
+    <link rel="stylesheet" href="Foodcart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        
+    <script src="backgroundImage.js"></script>
+
+</head>
+<body>
+    <div class="top">
+
+        <div class="left">
+            <div class="symbol">Bitelicious</div>
+        </div>
+
+        <div class="Menubar">
+            <a href="Homepage.html" target="_blank">Home</a>
+            <a href="Menu.html" target="_blank">Menu</a>
+            <!-- <a id="FC" href="" target="_blank">Cart</a> -->
+            <a href="Aboutus.html" target="_blank">AboutUs</a>
+            <a href="Feedback.html" target="_blank">Feedback</a>
+        </div>
+
+        <div class="right">
+            <button id="button" onclick="window.location.href='Login1.html';">Sign In</button>
+        </div>
+
+        <div class="openBtn">
+            <div class="menuCard">Order Online</div>
+            
+            <button id="openDiaOne">Soups and Appetisers</button>
+            <button id="openDiaTwo">Main Course</button>
+            <button id="openDiaThree">Roti and Rice</button>
+            <button id="openDiaFour">Desserts and <br> Fix Thali</button>
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+        <dialog id="DialogOne">
+            <form method="dialog">
+                <h2 id="D1TitleOne">~ Soups ~</h2>
+                <div>
+                    <p class="itemBox">Cream of Tomato - 90 Rs.<button class="addbtn" onclick="addToCart('Cream of Tomato', 90)">Add</button></p><hr>
+                    <p class="itemBox">Cheese corn Soup - 105 Rs. <button class="addbtn" onclick="addToCart('Cheese corn Soup', 105)">Add</button></p><hr>
+                    <p class="itemBox">Almond Broccoli Soup - 105 Rs. <button class="addbtn" onclick="addToCart('Almond Broccoli Soup', 105)">Add</button></p><hr>
+                    <p class="itemBox">Hot & Sour Soup - 105 Rs. <button class="addbtn" onclick="addToCart('Hot & Sour Soup', 105)">Add</button></p><hr>
+                    <p class="itemBox">Sweet Corn Soup - 110 Rs. <button class="addbtn" onclick="addToCart('Sweet Corn Soup', 110)">Add</button></p><hr>
+                </div>
+                    
+                <h2 id="D1TitleTwo">~ Appetisers ~</h2>
+                <div>
+                    <p class="itemBox">Veg Manchurian - 150 Rs.<button class="addbtn" onclick="addToCart('Veg Manchurian', 150)">Add</button></p><hr>
+                    <p class="itemBox">Spring Roll - 130 Rs. <button class="addbtn" onclick="addToCart('Spring Roll', 130)">Add</button></p><hr>
+                    <p class="itemBox">Paneer chilly dry - 150 Rs. <button class="addbtn" onclick="addToCart('Paneer chilly dry', 150)">Add</button></p><hr>
+                    <p class="itemBox">Harabhara Kebab - 120 Rs. <button class="addbtn" onclick="addToCart('Harabhara Kebab', 120)">Add</button></p><hr>
+                    <p class="itemBox">Hakka Noodles - 150 Rs. <button class="addbtn" onclick="addToCart('Hakka Noodles', 150)">Add</button></p><hr>
+                </div>
+                <button id="closeDiaOne">Close</button>
+            </form>
+        </dialog>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+        <dialog id="DialogTwo">
+            <form method="dialog">
+                <h2 id="D2Title">~ Main Course ~</h2>
+                <div>
+                    <p class="itemBox">Paneer Butter Masala - 180 Rs. <button class="addbtn" onclick="addToCart('Paneer Butter Masala', 180)">Add</button></p><hr>
+                    <p class="itemBox">Mix Vegetable - 180 Rs. <button class="addbtn" onclick="addToCart('Mix Vegetable', 180)">Add</button></p><hr>
+                    <p class="itemBox">Cheese Butter Masala - 200 Rs. <button class="addbtn" onclick="addToCart('Cheese Butter Masala', 200)">Add</button></p><hr>
+                    <p class="itemBox">Veg Handi Masala - 180 Rs. <button class="addbtn" onclick="addToCart('Veg Handi Masala', 180)">Add</button></p><hr>
+                    <p class="itemBox">Paneer Kadhai - 180 Rs. <button class="addbtn" onclick="addToCart('Paneer Kadhai', 180)">Add</button></p><hr>
+                    <p class="itemBox">Veg Makhanwala - 190 Rs. <button class="addbtn" onclick="addToCart('Veg Makhanwala', 190)">Add</button></p><hr>
+                    <p class="itemBox">Paneer Handi - 180 Rs. <button class="addbtn" onclick="addToCart('Paneer Handi', 180)">Add</button></p><hr>
+                    <p class="itemBox">Khoya Kaju - 200 Rs. <button class="addbtn" onclick="addToCart('Khoya Kaju', 200)">Add</button></p><hr>
+                    <p class="itemBox">Paneer Tikka Masala - 200 Rs. <button class="addbtn" onclick="addToCart('Paneer Tikka Masala', 200)">Add</button></p><hr>
+                    <p class="itemBox">Veg Kolhapuri - 180 Rs. <button class="addbtn" onclick="addToCart('Veg Kolhapuri', 180)">Add</button></p><hr>
+                    <p class="itemBox">Shahi Tikka Masala - 220 Rs. <button class="addbtn" onclick="addToCart('Shahi Tikka Masala', 220)">Add</button></p><hr>
+                    <p class="itemBox">Malai Kofta - 200 Rs. <button class="addbtn" onclick="addToCart('Malai Kofta', 200)">Add</button></p><hr>
+                    <p class="itemBox">Paneer Bhurji - 200 Rs. <button class="addbtn" onclick="addToCart('Paneer Bhurji', 200)">Add</button></p><hr>
+                    <p class="itemBox">Dum Aloo - 180 Rs. <button class="addbtn" onclick="addToCart('Dum Aloo', 180)">Add</button></p><hr>
+                </div>
+                <button id="closeDiaTwo">Close</button>
+            </form>
+        </dialog>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+        <dialog id="DialogThree">
+            <form method="dialog">
+                <h2 id="D3TitleOne">~ Roti ~</h2>
+                <div>
+                    <p class="itemBox">Plain Roti - 20 Rs. <button class="addbtn" onclick="addToCart('Plain Roti', 20)">Add</button></p><hr>
+                    <p class="itemBox">Butter Roti - 30 Rs. <button class="addbtn" onclick="addToCart('Butter Roti', 30)">Add</button></p><hr>
+                    <p class="itemBox">Naan - 40 Rs. <button class="addbtn" onclick="addToCart('Naan', 40)">Add</button></p><hr>
+                    <p class="itemBox">Cheese Naan - 65 Rs. <button class="addbtn" onclick="addToCart('Cheese Naan', 65)">Add</button></p><hr>
+                    <p class="itemBox">Butter Paratha - 60 Rs. <button class="addbtn" onclick="addToCart('Butter Paratha', 60)">Add</button></p><hr>
+                </div>
+                    
+                <h2 id="D3TitleTwo">~ Rice ~</h2>
+                <div>
+                    <p class="itemBox">Plain Rice - 100 Rs. <button class="addbtn" onclick="addToCart('Plain Rice', 100)">Add</button></p><hr>
+                    <p class="itemBox">Jeera Rice - 130 Rs. <button class="addbtn" onclick="addToCart('Jeera Rice', 130)">Add</button></p><hr>
+                    <p class="itemBox">Veg Pulao - 150 Rs. <button class="addbtn" onclick="addToCart('Veg Pulao', 150)">Add</button></p><hr>
+                    <p class="itemBox">Veg Biryani - 200 Rs. <button class="addbtn" onclick="addToCart('Veg Biryani', 200)">Add</button></p><hr>
+                    <p class="itemBox">Hyderabadi Biryani - 220 Rs. <button class="addbtn" onclick="addToCart('Hyderabadi Biryani', 220)">Add</button></p><hr>
+                </div>
+                <button id="closeDiaThree">Close</button>
+            </form>
+        </dialog>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+        <dialog id="DialogFour">
+            <form method="dialog">
+                <h2 id="D4TitleOne">~ Desserts ~</h2>
+                <div>
+                    <p class="itemBox">Gulab Jamun - 85 Rs. <button class="addbtn" onclick="addToCart('Gulab Jamun', 85)">Add</button></p><hr>
+                    <p class="itemBox">Jalebi - 75 Rs. <button class="addbtn" onclick="addToCart('Jalebi', 75)">Add</button></p><hr>
+                    <p class="itemBox">Rasgulla - 80 Rs. <button class="addbtn" onclick="addToCart('Rasgulla', 80)">Add</button></p><hr>
+                    <p class="itemBox">Vanilla Ice Cream - 50 Rs. <button class="addbtn" onclick="addToCart('Vanilla Ice Cream', 50)">Add</button></p><hr>
+                    <p class="itemBox">Cookie Cream Ice Cream - 70 Rs. <button class="addbtn" onclick="addToCart('Cookie Cream Ice Cream', 70)">Add</button></p><hr>
+                    <p class="itemBox">Choco Lava Cake - 100 Rs. <button class="addbtn" onclick="addToCart('Choco Lava Cake', 100)">Add</button></p><hr>
+                </div>
+                    
+                <h2 id="D4TitleTwo">~ Fix Thali ~</h2>
+                <div>
+                    <p class="itemBox">Punjabi Thali - 250 Rs. <button class="addbtn" onclick="addToCart('Punjabi Thali', 250)">Add</button></p><hr>
+                    <p class="itemBox">Gujarati Thali - 200 Rs. <button class="addbtn" onclick="addToCart('Gujarati Thali', 200)">Add</button></p><hr>
+                    <p class="itemBox">Dal Bati - 180 Rs. <button class="addbtn" onclick="addToCart('Dal Bati', 180)">Add</button></p><hr>
+                    <p class="itemBox">Chole Puri/Kulcha - 180 Rs. <button class="addbtn" onclick="addToCart('Chole Puri/Kulcha', 180)">Add</button></p><hr>
+                </div>
+                <button id="closeDiaFour">Close</button>
+            </form>
+        </dialog>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="container">
+            <div class="YourFoodCart">
+                <h2 class="text-center mt-5">Your Food Cart</h2>
+                <div id="cart" class="mb-5"></div>
+                <div class="checkout">
+                    <p id="cart-total">Cart Total: 0 Rs.</p>
+                    <input type="submit" value="Proceed to Pay" class="Paybtn" >
+                </div>
+            </div>
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left_footer">
+                <div class="l">Bitelicious</div>
+            </div>
+            
+            <div class="footer-info">
+                <p class="address"><i class="uil uil-map-marker"></i>Shoppers Arcade, near Adani college, Adani Shantigram, Ahemdabad - 382352</p>
+                <p class="phone"><i class="uil uil-phone"></i>0123456789</p>
+                <p class="email"><i class="uil uil-envelope"></i>bitelicious@restau.com</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="navigation_footer">
+                <a href="Homepage.html" target="_blank">Home</a>
+                <a href="Menu.html" target="_blank">Menu</a>
+                <a href="Aboutus.html" target="_blank">AboutUs</a>
+                <a href="Feedback.html" target="_blank">Feedback</a>
+            </div>
+            <p>&copy; 2024 Bitelicious. All rights reserved.</p>
+            <p>Bitelicious Co.</p>
+        </div>
+
+    </footer>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <script src="Foodcart.js"></script>
+</body>
+</html>

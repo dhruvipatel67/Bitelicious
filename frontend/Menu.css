@@ -1,0 +1,390 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --LogoFont: 'Glass Antiqua', cursive;
+    --BodyFont: "Josefin Sans", sans-serif;
+    --ColorStyle: #ff6961;
+    --FontSize: 14px; 
+}
+
+/* .top::before{
+    background: url('background/background7.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 118%;
+    z-index: -1;
+    opacity: 0.3;
+} */
+
+.top{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+.Menubar {
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: var(--BodyFont);
+    font-size: 20px;
+    margin: 27px auto;
+    padding-bottom: 13px;
+    font-weight: lighter;
+    transition-duration: 0.4s;
+}
+.Menubar a{
+    transition-duration: 0.3s;
+    text-decoration: none;
+    font-weight: lighter;
+    color: white ;
+}
+.Menubar a:hover{
+    font-weight: lighter;
+    color: grey;
+}
+.Menubar #menu {
+    font-weight: bolder;
+    color: white;
+}
+
+.symbol{
+    color: var(--ColorStyle);
+    font-weight: bold;
+    line-height: 46px;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--LogoFont); 
+}
+
+.left{
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 18px;
+}
+
+.right{
+    border: 1px solid gray;
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    border-radius: 30px;
+    padding: 8px 30px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-family: var(--BodyFont);
+    background-color: black;
+    color: white;
+}
+
+.right #button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0px;
+    font-family: var(--BodyFont);
+    font-size: 16px;
+}
+
+.cont1{
+    display:grid;
+    grid-template-rows: 2fr;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.contbox1{
+    color: white;
+    font-family: var(--BodyFont);
+    padding-left: 43%;
+    padding-top: 0px;
+    font-size: 40px;
+    font-style: none;
+    font-weight: lighter;
+}
+
+.contbox2{
+    color: white;
+    width: 90rem;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+:root {
+    --BorderRadiusSize: 15px;
+}
+
+
+.BoxMenu1, .BoxMenu3{
+    background-color: white;
+    width: 450px;
+    height: 385px;
+    border: 5px solid grey;
+    border-radius: var(--BorderRadiusSize);
+    margin-left: 400px;
+    margin-top: 0px;
+    color: black;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.BoxMenu1 table, .BoxMenu3 table {
+    width: 100%;
+}
+.BoxMenu1 h4, .BoxMenu1 th , .BoxMenu3 h4, .BoxMenu3 th {
+    font-family: var(--LogoFont);
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.BoxMenu1 td, .BoxMenu3 td {
+    font-family: var(--BodyFont);
+    font-style: italic;
+    text-align: center;
+    font-size: 11px;
+    padding: 1px;
+    line-height: 15px;
+}
+
+
+#SoupImg, #HNImg, #NaanImg, #VegBiryaniImg {
+    border: 2px solid grey;
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+    border-radius: var(--BorderRadiusSize);
+}
+
+.BoxMenu2{
+    background-color: white;
+    width: 455px;
+    height: 390px;
+    border: 5px solid grey;
+    border-radius: var(--BorderRadiusSize);
+    margin-left: 400px;
+    margin-top: 0px;
+    color: black;
+    padding-top: 5px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.BoxMenu2 table {
+    width: 100%;
+}
+.BoxMenu2 h4, .BoxMenu2 th {
+    font-family: var(--LogoFont);
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.BoxMenu2 td {
+    font-family: var(--BodyFont);
+    font-style: italic;
+    text-align: center;
+    font-size: 11px;
+    padding: 1px;
+    line-height: 15px;
+}
+#PBMImg, #KhoyaKaju {
+    border: 2px solid grey;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: var(--BorderRadiusSize);
+}
+
+.BoxMenu4{
+    background-color: white;
+    width: 455px;
+    height: 390px;
+    border: 5px solid grey;
+    border-radius: var(--BorderRadiusSize);
+    margin-left: 410px;
+    margin-top: 0px;
+    color: black;
+    padding-top: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.BoxMenu4 table {
+    width: 100%;
+}
+.BoxMenu4 h4, .BoxMenu4 th {
+    font-family: var(--LogoFont);
+    text-align: center;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.BoxMenu4 td {
+    font-family: var(--BodyFont);
+    font-style: italic;
+    text-align: center;
+    font-size: 11px;
+    padding: 2px;
+    line-height: 15px;
+}
+
+#PunjabiThaliImg, #GulabJamun{
+    border: 2px solid grey;
+    height: 150px;
+    width: 150px;
+    margin-top: 22px;
+    border-radius: var(--BorderRadiusSize);
+}
+
+.carousel-control-prev {
+    right: 1050px;
+}
+.carousel-control-next{
+    left: 1050px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 415px; /* Adjust this value to position the indicators where you want */
+    left: 32%; /* Adjust this value to horizontally center the indicators */
+    transform: translateX(-50%);
+    z-index: 15; /* Ensure the indicators are above other elements */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+footer {
+    font-family: var(--BodyFont);
+    background-color: #2d2d2d;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    bottom: 0%;
+}
+
+:footer{
+    --footer-height :120px;
+}
+
+.footer-container {
+    font-family: var(--BodyFont);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    margin-top: 55px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.address i, .phone i, .email i {
+    margin-right: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 5px;
+    color: white;
+    transition: 0.4s;
+}
+
+.footer-social a:hover {
+    /* transform: translateY(-5px); */
+    text-decoration: none;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    border: 0.0625rem solid white;
+}
+
+.footer-bottom {
+    transition-duration: 0.4s;
+    margin-top: -17px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: white;
+    font-family: var(--BodyFont);
+    padding: 20px 23px;
+}
+
+.fa {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+.fa-facebook:before, .fa-twitter:before, .fa-instagram:before {
+    /* content: "\f09a"; */
+    font-size: 18px;
+}
+
+.left_footer div {
+    color: var(--ColorStyle);
+    line-height: 46px;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--LogoFont);
+}
+
+.left_footer {
+    padding-top: 15px;
+    display: inline-block;
+    border-radius: 5%;
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    text-decoration: solid;
+    text-shadow: rgb(40, 25, 2);
+}
+
+.navigation_footer{
+    font-family: var(--BodyFont);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.navigation_footer a:hover {
+    color: grey;
+}

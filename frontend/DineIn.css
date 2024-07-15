@@ -1,0 +1,369 @@
+body {
+    background-color: black !important;
+    max-height: 100%;
+}
+
+:root {
+    --LogoFont: 'Glass Antiqua', cursive;
+    --BodyFont: 'Josefin Sans', sans-serif;
+    --ColorStyle: #ff6961;
+    --FontSize: 14px;
+}
+
+.top::before {
+    height: 100% !important;
+}
+
+.top {
+    width: 100%;
+    height: 100% !important;
+    padding: 0px;
+}
+
+.Menubar {
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 47%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: var(--BodyFont);
+    font-size: 20px;
+    margin: 27px auto;
+    padding-bottom: 13px;
+    font-weight: lighter;
+    transition-duration: 0.4s;
+}
+
+.Menubar a {
+    transition-duration: 0.3s;
+    text-decoration: none;
+    font-weight: lighter;
+    color: white;
+}
+
+.Menubar a:hover {
+    font-weight: lighter;
+    color: grey;
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 18px;
+}
+
+.symbol {
+    color: var(--ColorStyle);
+    font-weight: bold;
+    line-height: 46px;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--LogoFont);
+}
+
+.right {
+    border: 1px solid gray;
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    border-radius: 30px;
+    padding: 8px 30px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-family: var(--BodyFont);
+    background-color: black;
+    color: white;
+}
+
+.right #button {
+    margin-top: 1px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 4px;
+    font-family: var(--BodyFont);
+    font-size: 16px;
+}
+
+.DetBox1, .DetBox2 {
+    font-size: 15px;
+    text-align: center;
+    font-family: var(--BodyFont);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 10px solid transparent;
+    border-radius: 23px;
+    outline: 2px solid var(--ColorStyle);
+}
+
+.DetBox1 {
+    padding-bottom: 14px;
+}
+.DetBox2 {
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+
+.Container1, .Container2{
+    position: absolute;
+    top: 200px;
+    width: 250px;
+    height: 280px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+.Container1 {
+    left: 30px;
+}
+.Container2 {
+    right: 30px;
+}
+
+.BookingContainer {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    border: 1px solid grey;
+    width: 500px;
+    height: 460px;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: -170px;
+}
+
+.BookingContainer p {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: black;
+    font-family: var(--BodyFont);
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--BodyFont);
+}
+
+.booking-form select {
+    padding: 5px;
+    margin: 15px;
+    font-size: 16px;
+    width: 20rem;
+    font-family: var(--BodyFont);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1.5px solid black;
+    outline: none;
+}
+
+.booking-form button {
+    background-color: var(--ColorStyle);
+    color: black;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    margin: auto;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    font-family: var(--BodyFont);
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+
+.booking-form button:hover {
+    background-color: #ffb4af;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.24);
+}
+
+/* ------- */
+
+::placeholder {
+    justify-content: left;
+    padding-left: 15px;
+    opacity: 30%;
+}
+
+.field {
+    height: auto;
+    text-align: left;
+    padding-left: 10px;
+    transition-duration: 0.4s;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1.5px solid black;
+    outline: none;
+}
+
+#Uname, #Uemail, #Uphone, #URdate, #URtime {
+    width: 22rem;
+    padding-left: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 3.3rem;
+}
+
+.field:is(:focus, :valid, :hover) {
+    border-color: var(--ColorStyle);
+}
+
+.booking-form input:is(:focus, :valid, :hover) ~ i{
+    border-color: var(--ColorStyle);
+    /* color: var(--ColorStyle); */
+}
+
+#FBIcon1, #FBIcon2, #FBIcon3, #FBIcon4, #FBIcon5 {
+    color: black;
+    position: relative;
+    top: 0px;
+    right: 380px;
+    font-size: var(--FontSize);
+    transition-duration: 0.4s;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"] {
+    font-family: Arial;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+/* ------- */
+
+footer {
+    font-family: var(--BodyFont);
+    background-color: #2d2d2d;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    margin-top: 204px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+}
+
+:footer {
+    --footer-height: 120px;
+}
+
+.footer-container {
+    font-family: var(--BodyFont);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    margin-top: 55px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.address i, .phone i, .email i {
+    margin-right: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    /* transform: translateY(-5px); */
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    border: 0.0625rem solid white;
+}
+
+.footer-bottom {
+    margin-top: -17px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: white;
+    font-family: var(--BodyFont);
+    padding: 20px 23px;
+}
+
+.fa {
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+.fa-facebook:before, .fa-twitter:before, .fa-instagram:before {
+    font-size: 18px;
+}
+
+.left_footer div {
+    color: var(--ColorStyle);
+    line-height: 46px;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--LogoFont);
+}
+
+.left_footer {
+    padding-top: 15px;
+    display: inline-block;
+    border-radius: 5%;
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    text-decoration: solid;
+    text-shadow: rgb(40, 25, 2);
+}
+
+.navigation_footer {
+    font-family: var(--BodyFont);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation_footer a:hover {
+    color: grey;
+}

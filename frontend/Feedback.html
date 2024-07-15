@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feed-Back Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+        <link rel="stylesheet" href="Feedback.css">
+        <script src="backgroundImage.js"></script>
+</head>  
+<body>
+  <div class="top">
+    <div class="left">
+        <div class="symbol">Bitelicious</div>
+    </div>
+
+    <div class="Menubar">
+        <a href="Homepage.html" target="_blank">Home</a>
+        <a href="Menu.html" target="_blank">Menu</a>
+        <!-- <a href="Foodcart.html" target="_blank">Cart</a> -->
+        <a href="Aboutus.html" target="_blank">AboutUs</a>
+        <a id="fb" href="" target="_blank">Feedback</a>
+    </div>
+
+    <div class="right">
+        <button id="button" onclick="window.location.href='Login1.html';">Sign In</button>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="rightbox">
+      <div class="boxcontent">
+        <h3 class="til1">Our timings</h3>
+        <p>Weekends:<br>10:30am - 11:30pm</p>
+        <p>Weekdays:<br>10:30am - 12:00pm</p>
+      </div>
+    </div>
+
+    <h2 class="subtitle">Feedback Form</h2>
+    <p class="description" style="line-height: 16px;">Your feedback is important to us. <br>Please take a moment to provide your feedback below.</p>
+  
+    <form class="FormAttributes" id="feedback-form">
+        <div class="FBForm">
+            <label for="name" class="Lname" >Name:</label>
+            <input type="text" class="field" placeholder="Please tell us your name" id="Uname" name="name" required>
+            <i class="uil uil-user" id="FBIcon1" ></i>
+        </div>
+
+        <div class="FBForm">
+            <label for="email" class="Lname">Email:</label>
+            <input type="email" class="field" placeholder="Share your Email with us" id="Uemail" name="email" required>
+            <i class="uil uil-envelope" id="FBIcon2" ></i>
+        </div>
+
+        <div class="FBForm">
+            <label for="message" class="Lname">Message:</label>
+            <textarea class="field" placeholder="We'd love to hear your thoughts and suggestions" id="Umessage" name="message" required></textarea>
+            <i class="uil uil-feedback" id="FBIcon3" ></i>
+        </div>
+
+      <input class="Submitbtn" type="submit" value="Submit">
+    </form>
+
+<script src="feedback.js"></script>
+
+    <div class="leftbox">
+      <div class="boxcontent">
+        <h3 class="til1">Contact us</h3>
+        <p>Phone no.:<br>0123456789</p>
+        <p>Email:<br>bitelicious@restau.com</p>
+      </div>
+    </div>
+  </div>
+  
+<!--------------------------------------------------------------------------------------------------------------------------------->
+
+<footer>
+    <div class="footer-container">
+        <div class="left_footer">
+            <div class="l">Bitelicious</div>
+        </div>
+        
+        <div class="footer-info">
+            <p class="address"><i class="uil uil-map-marker"></i>Shoppers Arcade, near Adani college, Adani Shantigram, Ahemdabad - 382352</p>
+            <p class="phone"><i class="uil uil-phone"></i>0123456789</p>
+            <p class="email"><i class="uil uil-envelope"></i>bitelicious@restau.com</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="navigation_footer">
+          <a href="Homepage.html" target="_blank">Home</a>
+          <a href="Menu.html" target="_blank">Menu</a>
+          <a href="Aboutus.html" target="_blank">AboutUs</a>
+          <a id="fb" href="" target="_blank">Feedback</a>
+        </div>
+        <p>&copy; 2024 Bitelicious. All rights reserved.</p>
+        <p>Bitelicious Co.</p>
+    </div>
+
+</footer>
+</body>
+</html>

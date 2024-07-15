@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine in Page</title>
+    <link rel="stylesheet" href="DineIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="backgroundImage.js"></script>
+</head>
+<body>
+    <div class="top">
+
+        <div class="left">
+            <div class="symbol">Bitelicious</div>
+        </div>
+
+        <div class="Menubar">
+            <a href="Homepage.html" target="_blank">Home</a>
+            <a href="Menu.html" target="_blank">Menu</a>
+            <a href="Aboutus.html" target="_blank">AboutUs</a>
+            <a href="Feedback.html" target="_blank">Feedback</a>
+        </div>
+
+        <div class="right">
+            <button id="button" onclick="window.location.href='Login1.html';">Sign In</button>
+        </div>
+    </div>
+
+    <div class="Container1">
+        <div class="DetBox1">
+            <p>Reserve your spot to enjoy a delicious meal at Bitelicious.</p>
+            <h3>Our timings:</h3>
+            <p>Weekends: <br> 10:30am - 11:30pm</p>
+            <p>Weekdays: <br> 10:30am - 12:00pm</p>
+        </div>
+    </div>
+
+    <div class="BookingContainer">
+        <p>Book a Table</p>
+        
+        <form class="booking-form">
+            <div class="FBForm">
+                <!-- <label for="name" class="Lname" >Name:</label> -->
+                <input type="text" class="field" placeholder="Your name" id="Uname" name="name" required>
+                <i class="uil uil-user" id="FBIcon1" ></i>
+            </div>
+    
+            <div class="FBForm">
+                <!-- <label for="email" class="Lname">Email:</label> -->
+                <input type="email" class="field" placeholder="Your Email" id="Uemail" name="email" required>
+                <i class="uil uil-envelope" id="FBIcon2" ></i>
+            </div>
+            
+            <div class="FBForm">
+                <!-- <label for="phone" class="Lname">Contact:</label> -->
+                <input type="tel" class="field" placeholder="Your Contact number" id="Uphone" name="phone" required>
+                <i class="uil uil-phone" id="FBIcon3"></i>
+            </div>
+            
+            <div class="FBForm">
+                <!-- <label for="Rdate" class="Lname">Reservation Date:</label> -->
+                <input type="date" class="field" placeholder="Reservation Date" id="URdate" name="Rdate" required>
+                <i class="uil uil-calender" id="FBIcon4" ></i>
+            </div>
+            
+            <div class="FBForm">
+                <!-- <label for="Rtime" class="Lname">Reservation Time:</label> -->
+                <input type="time" class="field" placeholder="Reservation Time" id="URtime" name="Rtime" required>
+                <i class="uil uil-clock" id="FBIcon5" ></i>
+            </div>
+
+            <!-- <input type="text" placeholder="Your Name" required> -->
+            <!-- <input type="email" placeholder="Your Email" required> -->
+            <!-- <input type="tel" placeholder="Your Phone Number" required> -->
+            <!-- <input type="date" placeholder="Reservation Date" required> -->
+            <!-- <input type="time" placeholder="Reservation Time" required> -->
+            <select id="UGno" required>
+                <option value="" disabled selected>Number of Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button class="Submitbtn" type="submit">Book Now</button>
+        </form>
+        <script src="DineIn.js"></script>
+    </div>
+
+    <div class="Container2">
+        <div class="DetBox2">
+            <h4>Today's Offer</h4>
+            <h2>Grab 40% with your family orders</h2>
+            <h4>Only for dining orders  &#127881; </h4>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left_footer">
+                <div class="l">Bitelicious</div>
+            </div>
+            
+            <div class="footer-info">
+                <p class="address"><i class="uil uil-map-marker"></i>Shoppers Arcade, near Adani college, Adani Shantigram, Ahemdabad - 382352</p>
+                <p class="phone"><i class="uil uil-phone"></i>0123456789</p>
+                <p class="email"><i class="uil uil-envelope"></i>bitelicious@restau.com</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://x.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="navigation_footer">
+                <a href="Homepage.html" target="_blank">Home</a>
+                <a href="Menu.html" target="_blank">Menu</a>
+                <a href="Aboutus.html" target="_blank">AboutUs</a>
+                <a href="Feedback.html" target="_blank">Feedback</a>
+            </div>
+            <p>&copy; 2024 Bitelicious. All rights reserved.</p>
+            <p>Bitelicious Co.</p>
+        </div>
+    </footer>
+</body>
+</html>

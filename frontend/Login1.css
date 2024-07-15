@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+    --FontStyle: "Josefin Sans", sans-serif;
+    --ColorStyle: #ff6961;
+}
+
+.logo {
+    /* -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: rgb(255, 255, 255); */
+    color: var(--ColorStyle);
+    text-align: center;
+    font-size: 3.9rem;
+    font-weight: bolder;
+    font-family: 'Glass Antiqua', cursive;
+    position: relative;
+    top: 1rem;
+    z-index: 0; 
+}
+
+.formbox {
+    width: 23.75rem;
+    height: 5rem;
+    position: relative;
+    margin: 2.0625rem auto;
+    background-color: #ffffff;
+    padding: 0.063rem;
+    overflow: hidden;   
+    border-radius: 0.625rem;
+    z-index: 1;
+    transition: all .6s ease-in-out .1s;
+}
+
+#box {
+    height: 19rem;
+}
+
+.button {
+    width: 14.063rem;
+    margin: 2.188rem auto;
+    border-radius: 1.875rem;
+    position: relative;
+    border: 0.063rem solid black;
+}
+
+#but {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 7.19rem;
+    height: 2.2rem;
+    background: var(--ColorStyle);
+    border-radius: 1.875rem;
+    transition: .5s ease;
+    color: white;
+}
+
+.togbut {
+    font-size: 0.938rem;
+    font-weight: bolder;
+    font-family: var(--FontStyle);
+    padding: 0.62rem 1.875rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative; 
+    color: black;
+}
+
+.RegBtn, .LoginBtn {
+    font-family: var(--FontStyle);
+    width: 50%;
+    padding: 0.625rem 1.875rem;
+    cursor: pointer;
+    margin: 1rem 5.5rem;
+    border-radius: 1.875rem;
+    border: none;
+    background: var(--ColorStyle);
+    transition-duration: 0.4s;
+}
+
+.RegBtn:hover, .LoginBtn:hover {
+    background-color: #ffb4af;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.24);
+}
+
+.field:is(:hover, :focus, :valid) {
+    border-color: var(--ColorStyle);
+}
+
+.inp input:is(:hover, :focus, :valid) ~ i{
+    color: var(--ColorStyle);
+}
+
+::placeholder{
+    padding-left: 2px;
+    opacity: 30%;
+}
+
+.field {
+    width: 92%;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    padding-left: 30px;
+    margin: 0.625rem;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1.5px solid black;
+    outline: none;
+    transition-duration: 0.4s;
+}
+
+.uil {
+    transition-duration: 0.4s;
+}
+
+.inp {
+    top: 7rem;
+    position: absolute;
+    width: 17.5rem;
+    transition-duration: 0.4s;
+}
+
+.InpInc i {
+    position: relative;
+    bottom: 36px;
+    left: 15px;
+}
+
+#Icon3 {
+    position: absolute;
+    top: 75px;
+    left: 270px;
+}
+
+.RegInc i {
+    position: relative;
+    bottom: 36px;
+    left: 15px;
+}
+
+#RegPWDIcon {
+    position: absolute;
+    top: 200px;
+    left: 270px;
+}
+
+#CBConfirm {
+    margin-left: 0.656rem;
+}
+
+.Confirm {
+    font-family: var(--FontStyle);
+    font-size: 0.9rem;
+}
+
+#login {
+    left: 2.188rem;
+}
+
+#register {
+    left: 31.25rem;
+    top: 7.5rem;
+}

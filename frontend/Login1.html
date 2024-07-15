@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login1.css" />
+    <script src="https://kit.fontawesome.com/163bcdffcb.js" crossorigin="anonymous" ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="logo">Bitelicious</div>
+      <div class="formbox" id="box">
+        <div class="button">
+          <div id="but"></div>
+          <button class="togbut" onclick="Ulogin()">Login</button>
+          <button class="togbut" onclick="Uregister()">Register</button>
+        </div>
+        
+        <form id="login" class="inp">
+          <div class="InpInc">
+            <input type="email" class="field ULemail" placeholder="Email-Id" required />
+            <i class="uil uil-envelope icon" id="Icon1"></i>
+          </div>
+
+          <div class="InpInc">
+            <input type="password" class="field ULpassword pswd" placeholder="Password" required />
+            <i class="uil uil-lock icon" id="Icon2"></i>
+            <i class="uil uil-eye-slash showHidePw" id="Icon3"></i>
+          </div>
+          
+          <input class="LoginBtn" type="submit" value="Login">
+          <!-- onclick="submitUserLoginForm()" -->
+          <!-- <button type="submit" class="submit" onclick="window.open('Homepage.html', '_blank');">Login</button> -->
+        </form>
+
+        <!-- Registraion Form -->
+        
+        <form id="register" class="inp">
+          <div class="RegInc">
+            <input type="text" class="field Uname" placeholder="FullName" required />
+            <i class="uil uil-user"></i>
+          </div>
+          
+          <div class="RegInc">
+            <input type="email" class="field Uemail" placeholder="Email-Id" required />
+            <i class="uil uil-envelope icon" id="Icon1"></i>
+          </div>
+          
+          <div class="RegInc">
+            <input type="tel" class="field Uphone" placeholder="PhoneNo" required />
+            <i class="uil uil-phone"></i>
+          </div>
+          
+          <div class="RegInc">
+            <input type="password" class="field Upassword pswd" placeholder="Password" required />
+            <i class="uil uil-lock icon"></i>
+            <i class="uil uil-eye-slash showHidePw" id="RegPWDIcon"></i>
+          </div>
+
+          <input type="checkbox" class="Confirm" id="CBConfirm" name="confirmati"on" required />
+          <label class="Confirm" for="confirmation">Confirm</label>
+          <input type="submit" class="RegBtn" value="Register" >
+          <!-- onclick="submitUserRegisterForm()" -->
+          <!-- <button type="submit" class="submit" onclick="window.open('Homepage.html', '_blank');">Register</button> -->
+        </form>
+        <script src="Login1.js"></script>
+      </div>
+    </div>
+  </body>
+  </html>
+  
